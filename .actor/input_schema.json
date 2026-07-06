@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "title": "Case Law Tracker Input",
+  "description": "Configure the listing base URL and crawl depth.",
+  "type": "object",
+  "properties": {
+    "baseUrl": {
+      "type": "string",
+      "title": "Base URL",
+      "description": "Root listing page URL.",
+      "editor": "textfield",
+      "default": "https://www.courtlistener.com/opinion/"
+    },
+    "maxPages": {
+      "type": "integer",
+      "title": "Max Pages",
+      "description": "Number of listing pages to crawl.",
+      "editor": "number",
+      "default": 5
+    }
+  }
+}

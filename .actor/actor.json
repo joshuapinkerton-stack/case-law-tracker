@@ -1,0 +1,23 @@
+{
+  "actorSpecification": 1,
+  "name": "case-law-tracker",
+  "title": "US Case Law Tracker",
+  "description": "Track US court opinions and docket entries from free public legal sources.",
+  "version": "1.0",
+  "meta": {
+    "image": "",
+    "category": "legal",
+    "actorUrl": "https://github.com/joshuapinkerton-stack/case-law-tracker"
+  },
+  "pricing": {
+    "payPerEvent": {
+      "events": [
+        { "name": "case_filing", "pricePerUnit": 10 },
+        { "name": "docket_snapshot", "pricePerUnit": 20 }
+      ]
+    },
+    "pricingInfo": "Pay-per-Event: $0.10 per case filing, $0.20 per docket snapshot page."
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json"
+}

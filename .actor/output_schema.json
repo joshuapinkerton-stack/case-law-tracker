@@ -1,0 +1,15 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Case Law Tracker Output",
+  "description": "Case opinion records.",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "court": { "type": "string" },
+    "dateFiled": { "type": "string" },
+    "docketNumber": { "type": "string" },
+    "url": { "type": "string" },
+    "textSnippet": { "type": "string" },
+    "detectedAt": { "type": "string" }
+  }
+}
