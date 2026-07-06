@@ -1,15 +1,43 @@
 {
-  "actorOutputSchemaVersion": 1,
-  "title": "Case Law Tracker Output",
-  "description": "Case opinion records.",
-  "type": "object",
-  "properties": {
-    "title": { "type": "string" },
-    "court": { "type": "string" },
-    "dateFiled": { "type": "string" },
-    "docketNumber": { "type": "string" },
-    "url": { "type": "string" },
-    "textSnippet": { "type": "string" },
-    "detectedAt": { "type": "string" }
-  }
+    "$schema": "https://apify.com/schemas/v1/output.ide.json",
+    "actorOutputSchemaVersion": 1,
+    "title": "Case Law Tracker Output",
+    "description": "Case opinion records.",
+    "properties": {
+        "title": {
+            "type": "string",
+            "title": "Title",
+            "template": "{{item.title}}"
+        },
+        "court": {
+            "type": "string",
+            "title": "Court",
+            "template": "{{item.court}}"
+        },
+        "dateFiled": {
+            "type": "string",
+            "title": "Date Filed",
+            "template": "{{item.dateFiled}}"
+        },
+        "docketNumber": {
+            "type": "string",
+            "title": "Docket Number",
+            "template": "{{item.docketNumber}}"
+        },
+        "url": {
+            "type": "string",
+            "title": "Url",
+            "template": "{{item.url}}"
+        },
+        "textSnippet": {
+            "type": "string",
+            "title": "Text Snippet",
+            "template": "{{item.textSnippet}}"
+        },
+        "detectedAt": {
+            "type": "string",
+            "title": "Detected At",
+            "template": "{{item.detectedAt}}"
+        }
+    }
 }
